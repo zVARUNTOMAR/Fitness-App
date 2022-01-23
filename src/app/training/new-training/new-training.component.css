@@ -1,0 +1,14 @@
+.btn{
+    width : 160px;
+    padding :2px 25px;
+    margin-top: 25px;
+    background-color: #212121;
+    font-weight: 600 !important;
+    letter-spacing:1.25px;
+}
+
+mat-card{
+    font-family: 'Montserrat', sans-serif;
+    margin : 50px;
+    padding: 20px;
+}

@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover,a:active{
+    color: lightgray;
+    transition: all 0.2s ease-in;
+}
+
+.navigation-items{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    
+}
+.nav-menu-label{
+    display: inline-block;
+    padding-left: 6px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 600;
+    font-size:17px;
+}
