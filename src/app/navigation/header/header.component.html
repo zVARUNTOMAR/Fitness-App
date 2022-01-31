@@ -4,12 +4,13 @@
         <mat-icon fxShow.xs>menu</mat-icon>
       </button>
     </div>
-    <div><a routerLink="/">LOGO</a></div>
+    <div><a routerLink="/">FIT GURU</a></div>
     <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
       <ul fxLayout fxLayoutGap="20px" class="navigation-items">
-        <li><a routerLink="/signup">Sign up</a></li>
-        <li><a routerLink="/login">Login</a></li>
-        <li><a routerLink="/training">Training</a></li>
+        <li *ngIf ="isAuth"><a routerLink="/training">Training</a></li>
+        <li *ngIf ="!isAuth"><a routerLink="/signup">Sign up</a></li>
+        <li *ngIf ="!isAuth"><a routerLink="/login">Login</a></li>
+        <li *ngIf ="isAuth"><a style = "cursor:pointer" (click)="onLogout()">Logout</a></li>
       </ul>
     </div>
   </mat-toolbar>

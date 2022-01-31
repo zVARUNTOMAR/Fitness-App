@@ -30,6 +30,10 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDialogModule} from '@angular/material/dialog';
 import { StopTrainingComponent } from './training/stop-training/stop-training.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {ReactiveFormsModule} from '@angular/forms'
+import { AuthService } from './_services/auth.service';
+import { AuthGuard } from './_guards/auth.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,9 +68,11 @@ import { StopTrainingComponent } from './training/stop-training/stop-training.co
     MatCardModule,
     MatSelectModule,
     MatProgressSpinnerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDividerModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent]
 })

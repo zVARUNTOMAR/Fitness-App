@@ -1,0 +1,30 @@
+.login-container {
+    border: 1px solid lightgray;
+    width: max-content;
+    margin : auto;
+    margin-top: 200px;
+    padding : 20px 45px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.login-heading{
+    /* margin-top : 10px; */
+    margin-bottom : 20px;
+    font-size : 25px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.btn{
+    width : 160px;
+    padding :2px 25px;
+    margin-top: 25px;
+    background-color: #92C463;
+    letter-spacing:1.25px;
+}
+
+*{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 600;
+}
