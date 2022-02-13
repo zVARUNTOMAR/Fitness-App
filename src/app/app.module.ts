@@ -34,6 +34,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import {ReactiveFormsModule} from '@angular/forms'
 import { AuthService } from './_services/auth.service';
 import { AuthGuard } from './_guards/auth.guard';
+import {MatTableModule} from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import {MatPaginatorModule} from '@angular/material/paginator';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +73,10 @@ import { AuthGuard } from './_guards/auth.guard';
     MatProgressSpinnerModule,
     MatDialogModule,
     MatDividerModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule
   ],
   providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent],
